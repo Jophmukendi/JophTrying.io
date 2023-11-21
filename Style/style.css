@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1em;
+    background-color: #1f2039;
+}
+main{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+header, footer{
+    background-color: white;
+    padding: 10px 50px;
+}
+footer, nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    margin-left: 30px;
+    font-weight: bold;
+}
+a{
+    color: #242424;
+    text-decoration: none;
+}
+#nav a:hover{
+    color: #a5b4fc;
+    transform: scale(1.5);
+}
+section {
+    padding: 40px;
+}
+.accueil-introduction {
+    display: flex;
+    flex-direction: row;
+    /* max-width: 1000px; */
+    align-items: flex-start;
+    margin: auto;
+}
+.accueil-introduction h1 {
+    margin-top: 60px;
+    margin-bottom: 15px;
+}
+.accueil-introduction p {
+    margin-bottom: 30px;
+}
+.accueil-introduction div {
+    padding-right: 40px;
+    vertical-align: middle;
+}
+h1{
+    font-size: 3.5em;
+    color: #a5b4fc;
+    font-family: 'Montserrat', sans-serif;
+}
+p, li {
+    font-size: 1.1em;
+    color: #f9f8ff;
+}
+em {
+    color: #a5b4fc;
+    font-style: normal;
+}
+.cta {
+    display: inline-block;
+    background: linear-gradient(#8e86b5, #acaeed);
+    color: white;
+    border-radius: 50px;
+    padding: 20px 30px;
+}
+.cta:hover {
+    background: linear-gradient(#696484, #8788ba);
+    text-decoration: none;
+}
+.lien-icone {
+    margin-left: 30px;
+}
+.lien-icone:hover {
+    opacity: 0.5;
+}
+
+/* Style for mobile de*/
+@media all and (min-width: 320px) and (max-width: 768px) {
+    #contenair{
+        width: 100%;
+        margin: 0 auto;
+    }
+    header{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .accueil-introduction {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .accueil-introduction h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .accueil-introduction p {
+        margin-bottom: 30px;
+    }
+    .accueil-introduction div {
+        padding: 20px;
+        vertical-align: middle;
+    }
+    p, li {
+        font-size: 1.5em;
+    }
+    .cta {
+        display: block;
+        text-align: center;
+    }
+    #hidemobile{
+        display: none;
+    }
+    footer div{
+        margin: 10px;
+    }
+    main img{
+        width: 100%;
+    }
+
+}
